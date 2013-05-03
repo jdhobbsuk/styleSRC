@@ -13,10 +13,16 @@ If there's some feedback from the client and you need to do some changes, do the
 
 Also, I've made it responsive; the hope being that when you fire your link over in an e-mail, anyone can see it on whatever device they're using.
 
+_styleSRC_ is in its really early stages, so please don't rip it to shreds...it's my *first* GitHub repo.  
+If you've got a suggestion for a feature or can think of ways to improve it then fork it or send me a tweet at [@thecodezombie](https://twitter.com/thecodezombie)
+
 So far, there's just 'Logo', 'Colour Palette' and 'Typography', but I've got ideas for more:
 
-### Ideas ###
+### Feature Ideas ###
 - __Logo treatment:__ what the logo will look like on a light or dark background
 - __Example copy:__ Examples of your font in the usual dummy text (e.g. _Lorem Ipsum_ and _The quick brown fox_)
 - __Photography / Illustrations:__ Examples that you think would be suitable for the website.
 - __Social names:__ For when your project is brand new and you want to clearly propose the Facebook page or Twitter handle
+
+Bashed together in a couple of CodeFriday's  
+Licensed under a the DBAD license: http://www.dbad-license.org/
