@@ -1,0 +1,17 @@
+@charset "UTF-8";
+;
+/*----------------------------------------------------------------------------------------*\
+ * styleSRC
+ *
+ * Author	: Jason Hobbs
+ * Website	: http://thecodezombie.co.uk
+ * GitHub	: https://github.com/thecodezombie/styleSRC
+ *
+ * This work is licensed under a the DBAD license: http://www.dbad-license.org/
+\*----------------------------------------------------------------------------------------*/
+
+@import 'config/includes';
+
+@import 'libs/reset';
+@import 'libs/normalize';
+@import 'theme/theme';

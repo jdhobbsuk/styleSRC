@@ -1,0 +1,108 @@
+/*
+	Responsive mixin:
+		You probably don't like this naming
+		convention, but it works, so deal with it!
+*/
+@mixin respond-min($point) {
+  @if $point == mobile-landscape {
+    @media (min-width: 30em)  { @content; }
+  }
+  @if $point == small-tablet {
+    @media (min-width: 37.5em){ @content; }
+  }
+  @else if $point == tablet-portrait {
+    @media (min-width: 48em)  { @content; }
+  }
+  @else if $point == netbook {
+    @media (min-width: 55em)  { @content; }
+  }
+  @else if $point == tablet-landscape {
+    @media (min-width: 62em)  { @content; }
+  }
+  @else if $point == laptop {
+    @media (min-width: 70em)  { @content; }
+  }
+  @else if $point == desktop {
+    @media (min-width: 78em)  { @content; }
+  }
+  @else if $point == thunderbolt {
+    @media (min-width: 90em)  { @content; }
+  }
+}
+
+// font-size
+@mixin font-size ($size: 16) {
+	$rem: ($size / 16);
+	font-size: ($size * 1px);
+	font-size: ($rem * 1rem); }
+
+// icon library
+@mixin icon($library, $icon){
+	font-family: $library;
+	content:$icon;
+}
+
+// ----------------------------------
+// CSS3
+// ----------------------------------
+
+// box-sizing
+@mixin box-sizing ($type: border) {
+	-moz-box-sizing: #{$type}-box;
+	-webkit-box-sizing: #{$type}-box;
+	box-sizing: #{$type}-box;
+}
+
+// border-radius
+@mixin border-radius($radius: .4em) {
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+	
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+// box-shadow	
+@mixin box-shadow($x: 0, $y: 1px, $blur: 2px, $alpha: 0.1) {
+	-moz-box-shadow: $x $y $blur rgba(0, 0, 0, $alpha);
+	-webkit-box-shadow: $x $y $blur rgba(0, 0, 0, $alpha);
+	box-shadow: $x $y $blur rgba(0, 0, 0, $alpha);
+}
+
+// box-shadow (inset)
+@mixin box-shadow-inset($x: 0, $y: 1px, $blur: 2px, $alpha: 0.4) {
+	-moz-box-shadow: inset $x $y $blur rgba(0, 0, 0, $alpha);
+	-webkit-box-shadow: inset $x $y $blur rgba(0, 0, 0, $alpha);
+	box-shadow: inset $x $y $blur rgba(0, 0, 0, $alpha);
+}
+
+// opacity
+@mixin opacity($alpha: .5) {
+	-moz-opacity: $alpha;
+	-webkit-opacity: $alpha;
+	opacity: $alpha;
+}
+
+// gradient Y
+@mixin linear-gradient-y($start: #eee, $stop: #fff) {
+	background: $start;
+	background: -moz-linear-gradient(top, $start 0%,$stop 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start), color-stop(100%,$stop));
+	background: -webkit-linear-gradient(top, $start 0%,$stop 100%);
+	background: -o-linear-gradient(top, $start 0%,$stop 100%);
+	background: -ms-linear-gradient(top, $start 0%,$stop 100%);
+	background: linear-gradient(top, $start 0%,$stop 100%);
+}
+
+// gradient X
+@mixin linear-gradient-x($start: #eee, $stop: #fff) {
+	background: $start;
+	background: -moz-linear-gradient(left, $start 0%,$stop 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,$start), color-stop(100%,$stop));
+	background: -webkit-linear-gradient(left, $start 0%,$stop 100%);
+	background: -o-linear-gradient(left, $start 0%,$stop 100%);
+	background: -ms-linear-gradient(left, $start 0%,$stop 100%);
+	background: linear-gradient(left, $start 0%,$stop 100%);
+}

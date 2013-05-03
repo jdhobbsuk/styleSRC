@@ -1,0 +1,96 @@
+.style-section.typography .title:before {
+	@include icon('fontello', '\e779');
+	font-weight: 100;
+}
+
+.type-item {
+	
+	@include respond-min(netbook){
+		margin-left: 7.5%;
+	}
+	
+	.heading {
+		@include font-size(32);
+		line-height: 1.45;
+		margin-bottom: 0;
+		
+		@include respond-min(small-tablet){
+			@include font-size(40);
+			line-height: 1.1;
+			margin-bottom: .33em;
+		}
+		
+		@include respond-min(tablet-portrait){
+			@include font-size(45);
+			line-height: 1;
+		}
+		
+		@include respond-min(netbook){
+			@include font-size(48);
+			line-height: 1;
+			margin-bottom: .4em;
+		}
+	}
+	
+	.alpha-map {
+		@include font-size(16);
+		line-height: 1.5;
+		
+		li {
+			display: inline-block;
+			margin-left: 3px;
+			
+			
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		
+		@include respond-min(small-tablet){
+			@include font-size(20);
+			line-height: 1.25;
+		}
+		
+		@include respond-min(tablet-portrait){
+			@include font-size(22);
+			line-height: 1.35;
+		}
+	}
+	
+	.name,
+	.source {
+		@include font-size(16);
+		color: $grey;
+		font-weight: 400;
+		text-align: right;
+		
+		a {
+			font-weight: 700;
+		}
+	}
+	
+	.name {
+		text-transform: uppercase;
+		font-weight: 400;
+		letter-spacing: 1px;
+		@include font-size(16);
+	}
+	
+	.source {
+		@include font-size(14);
+		line-height: 1.7;
+	}
+	
+	footer {
+		@include box-sizing;
+		padding-bottom: 1.4em;
+		margin-bottom: 1.5em;
+		border-bottom: 1px solid $silver;
+		
+		margin-top: 1.5em;
+		
+		@include respond-min(netbook){
+			margin-top: 1.1em;
+		}
+	}
+}

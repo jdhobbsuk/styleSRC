@@ -1,0 +1,79 @@
+body {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-weight: normal;
+    line-height: $baseline;
+    font-family: $theme-font;
+    color: $charcoal;
+    
+    &.with-baseline {
+	    background-image: url('http://basehold.it/i/24/999999');
+    }
+    
+    &.with-fixed {
+	    .header {
+		    position: fixed;
+			top: 0;
+			z-index: 100;
+	    }
+	    
+	    .content {
+			padding-top: 6em;
+		}
+    }
+}
+
+.wrap {
+	width: 90%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+a {
+	color: darken($highlight, 10%);
+	
+	&:hover {
+		color: darken($highlight, 20%);
+	}
+}
+
+.content {
+	padding: 1.5em 0 0;
+	min-height: 1000px;
+}
+
+@font-face {
+	font-family: 'fontello';
+	src: url("../font/fontello.eot?39071623");
+	src: url("../font/fontello.eot?39071623#iefix") format('embedded-opentype'), url("../font/fontello.woff?39071623") format('woff'), url("../font/fontello.ttf?39071623") format('truetype'), url("../font/fontello.svg?39071623#fontello") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.project-name {
+	font-style: italic;
+	@include font-size(50);
+	line-height: 1.45;
+	letter-spacing: -3px;
+	text-align: center;
+	-webkit-mask-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.7)), to(rgba(0,0,0,1)));
+}
+
+.style-section {
+	margin-top: 3em;
+	
+	.title {
+		font-weight: bold;
+		font-style: italic;
+		@include font-size(32);
+		margin-bottom: .75em;
+		color: $charcoal;
+		letter-spacing: -1px;
+		
+		&:before {
+			font-style: normal;
+			margin-right: .25em;
+			font-weight: 100;
+		}
+	}
+}

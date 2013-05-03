@@ -1,0 +1,129 @@
+.style-section.palette .title:before {
+	@include icon('fontello', '\e79a');
+	font-weight: 100;
+}
+
+$tiles-per-row: 3;
+$inc: 3;
+
+.color-palette {
+	max-width: (($baseunit * $inc) * $tiles-per-row) + ($baseunit * ($tiles-per-row - 1));
+	margin: 0 auto;
+	
+	li {
+		display: block;
+		float: left;
+		margin-bottom: 1.5em;
+		
+		margin-right: $baseunit;
+		width: $baseunit * $inc;
+		height: $baseunit * $inc;
+		
+		&:nth-child(#{$tiles-per-row}n + #{$tiles-per-row}) {
+			margin-right: 0;
+		}
+	}
+	
+	.color-tile {
+		display: block;
+		position: relative;
+		background-color: #333;
+		cursor: pointer;
+		
+		width: 100%;
+		height: 100%;
+		
+		&:hover .hex-ref {
+			display: block;
+		}
+	}
+	
+	.hex-ref {
+		display: none;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		@include box-sizing;
+		padding: .25em .5em;
+		text-align: right;
+		@include font-size(13);
+		background-color: rgba($charcoal, .6);
+		color: $white;
+	}
+	
+	.double-overlap {
+		position: relative;
+		margin-top: -($baseunit / 2);
+		
+		li {
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin-left: 0;
+			
+			&:first-child {
+				top: $baseunit;
+				left: $baseunit;
+			}
+		}
+	}
+	
+	@include respond-min(mobile-landscape){
+		$inc: 4;
+	
+		max-width: (($baseunit * $inc) * $tiles-per-row) + ($baseunit * ($tiles-per-row - 1));
+		
+		li {
+			width: $baseunit * $inc;
+			height: $baseunit * $inc;
+		}
+	}
+	
+	@include respond-min(small-tablet){
+		$inc: 5;
+	
+		max-width: (($baseunit * $inc) * $tiles-per-row) + ($baseunit * ($tiles-per-row - 1));
+		
+		li {
+			width: $baseunit * $inc;
+			height: $baseunit * $inc;
+		}
+		
+		.hex-ref {
+			@include font-size(14);
+		}
+	}
+	
+	@include respond-min(tablet-portrait){
+		$inc: 4;
+	
+		max-width: none;
+		
+		li {
+			width: $baseunit * $inc;
+			height: $baseunit * $inc;
+			margin-right: $baseunit / 2;
+			
+			&:nth-child(#{$tiles-per-row}n + #{$tiles-per-row}) {
+				margin-right: $baseunit /2;
+			}
+		}
+	}
+	
+	@include respond-min(tablet-landscape){
+		$inc: 5;
+	
+		max-width: none;
+		
+		li {
+			width: $baseunit * $inc;
+			height: $baseunit * $inc;
+			margin-right: $baseunit;
+			
+			&:nth-child(#{$tiles-per-row}n + #{$tiles-per-row}) {
+				margin-right: $baseunit;
+			}
+		}
+	}
+}

@@ -1,0 +1,219 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<!-- !! Add in your project name -->
+	<title>&lt;Project Name&gt; | StyleSRC</title>
+	
+	<meta name="description" content="styleSRC: for serving the beginnings of a project in mere minutes">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<!-- All CSS for styleSRC -->
+	<link rel="stylesheet" href="assets/css/all.css">
+	
+	<!-- Basic fonts for styleSRC -->
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700italic, 900' rel='stylesheet' type='text/css'>
+	
+	<!-- !! Add your typography JS Scripts (eg. Typekit) -->
+	<script type="text/javascript" src="//use.typekit.net/rvk4tzd.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+
+<!--
+	** Baseline:
+		Activate by adding "with-baseline" to <body>
+		Provides a dotted line, provided by basehold.it
+-->
+
+<!--
+	!! Fixied:
+		Activate by adding "with-fixed" to <body>
+		Fixes header bar to top with position: relative
+-->
+<body class="">
+
+
+<!--
+	!! Fonts:
+		Quickly add your fonts styling here,
+		it saves needing to go into Sass & compiling
+-->
+<style>
+	.font-1 .heading,
+	.font-1 .alpha-map {
+		font-family: 'adelle', serif;
+		font-style: italic;
+	}
+
+	.font-2 .heading,
+	.font-2 .alpha-map {
+		font-family: 'proxima-nova', sans-serif;
+		font-weight: 800;
+	}
+</style>
+
+<header class="header">
+	<div class="wrap cf">
+		<h1 class="title">Style<span>SRC</span></h1>
+		
+		<!--
+			** Author:
+				A spot to slap your name / company logo,
+				uncomment below to see the Mixd example
+		-->
+		<div class="author">
+			<h3>
+				<span>Lovingly created by</span>
+				<a href="http://mixd.co.uk">
+					<img src="assets/img/author-logo.png" alt="Mixd" />
+				</a>
+			</h3>
+		</div>
+	</div>
+</header>
+
+<div class="content wrap cf">
+	
+	<h1 class="project-name">Project Name</h1>
+	
+	<section class="style-section logo">
+		<h1 class="title">Logo</h1>
+		
+		<a href="" class="project-logo">
+			<img src="assets/img/project-logo.png" alt="Mixd" />
+		</a>
+	</section>
+	
+	<section class="style-section palette">
+		<h1 class="title">Colour Palette</h1>
+		
+		<!--
+			!! Colour Palette:
+				Duplicate the <li> and swap out the hex-refs for
+				the ones in your design. There's a two-tile overlap
+				for when you want overlay two colours 
+		-->
+		
+		<ul class="color-palette cf">
+		
+			<!-- Regular Tile -->
+			<li>
+				<span class="color-tile" style="background: #589596;">
+					<span class="hex-ref">#589596</span>
+				</span>
+			</li>
+			
+			<!-- Two-tile overlap -->
+			<li class="double-overlap">
+				<ul>
+					<li>
+						<span class="color-tile" style="background: #494949;">
+							<span class="hex-ref">#494949</span>
+						</span>
+					</li>
+					<li>
+						<span class="color-tile" style="background: #f8f8f8;">
+							<span class="hex-ref">#f8f8f8</span>
+						</span>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	
+	<section class="style-section typography">
+		<h1 class="title">Typography</h1>
+		
+		<!--
+			!! Typography:
+				Duplicate the type item for every font you use.
+				Remember to edit the name / source!
+		-->
+		
+		<!-- type-item -->
+		<article class="font-1 type-item">
+			<h3 class="heading">Adelle Extra Bold, Italic</h3>
+				<ul class="alpha-map">
+					<li>Aa</li>
+					<li>Bb</li>
+					<li>Cc</li>
+					<li>Dd</li>
+					<li>Ee</li>
+					<li>Ff</li>
+					<li>Gg</li>
+					<li>Hh</li>
+					<li>Ii</li>
+					<li>Jj</li>
+					<li>Kk</li>
+					<li>Ll</li>
+					<li>Mm</li>
+					<li>Nn</li>
+					<li>Oo</li>
+					<li>Pp</li>
+					<li>Qq</li>
+					<li>Rr</li>
+					<li>Ss</li>
+					<li>Tt</li>
+					<li>Uu</li>
+					<li>Vv</li>
+					<li>Ww</li>
+					<li>Xx</li>
+					<li>Yy</li>
+					<li>Zz</li>
+				</ul>
+					
+				<footer>
+					<h1 class="name">Adelle (Extra Bold & Italic)</h1>
+					<h2 class="source">Sourced from <a href="#">Typekit</a></h2>
+				</footer>
+			</article>
+		</section>
+				
+		<article class="font-2 type-item">
+			<h3 class="heading">Proxima Nova, Bold</h3>
+				<ul class="alpha-map">
+					<li>Aa</li>
+					<li>Bb</li>
+					<li>Cc</li>
+					<li>Dd</li>
+					<li>Ee</li>
+					<li>Ff</li>
+					<li>Gg</li>
+					<li>Hh</li>
+					<li>Ii</li>
+					<li>Jj</li>
+					<li>Kk</li>
+					<li>Ll</li>
+					<li>Mm</li>
+					<li>Nn</li>
+					<li>Oo</li>
+					<li>Pp</li>
+					<li>Qq</li>
+					<li>Rr</li>
+					<li>Ss</li>
+					<li>Tt</li>
+					<li>Uu</li>
+					<li>Vv</li>
+					<li>Ww</li>
+					<li>Xx</li>
+					<li>Yy</li>
+					<li>Zz</li>
+				</ul>
+					
+				<footer>
+					<h1 class="name">Proxima Nova (Bold)</h1>
+					<h2 class="source">Sourced from <a href="#">Typekit</a></h2>
+				</footer>
+			</article>
+		</section>
+	
+</div>
+	
+	
+
+</body>
+</html>

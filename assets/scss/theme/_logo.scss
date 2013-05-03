@@ -1,0 +1,7 @@
+.style-section.logo .title:before {
+	@include icon('fontello', '\e70a');
+}
+
+.project-logo {
+	display: block;
+}
