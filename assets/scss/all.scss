@@ -12,6 +12,20 @@
 
 @import 'config/includes';
 
-@import 'libs/reset';
-@import 'libs/normalize';
-@import 'theme/theme';
+/*
+	styleSRC defaults
+		The basic stylings for styleSRC.
+*/
+@import 'theme/_colour';
+@import 'theme/_core';
+@import 'theme/_header';
+@import 'theme/_footer';
+
+/*
+	Style Sections
+		Comment out whichever sections aren't used.
+*/
+@import 'theme/_logo';
+@import 'theme/_palette';
+@import 'theme/_typography';
+@import 'theme/_icons';

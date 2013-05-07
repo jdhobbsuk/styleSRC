@@ -247,6 +247,14 @@ a img {
 img {
   max-width: 100%; }
 
+/*
+	styleSRC defaults
+		The basic stylings for styleSRC.
+*/
+/*
+	Use $highlight to pull some of
+	your company colours into styleSRC
+*/
 body {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -331,38 +339,6 @@ a {
   font-size: 0.875rem;
   line-height: 1.7; }
 
-.footer {
-  padding: 0.75em 0;
-  text-align: center;
-  background: #464646;
-  background: -moz-linear-gradient(top, #464646 0%, #2c2c2c 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #464646), color-stop(100%, #2c2c2c));
-  background: -webkit-linear-gradient(top, #464646 0%, #2c2c2c 100%);
-  background: -o-linear-gradient(top, #464646 0%, #2c2c2c 100%);
-  background: -ms-linear-gradient(top, #464646 0%, #2c2c2c 100%);
-  background: linear-gradient(top, #464646 0%, #2c2c2c 100%);
-  color: white;
-  font-size: 12px;
-  font-size: 0.75rem; }
-  .footer .maker a {
-    font-weight: bold; }
-  .footer p {
-    margin-bottom: 1em; }
-    .footer p:last-child {
-      margin-bottom: 0; }
-  @media (min-width: 30em) {
-    .footer p {
-      float: right;
-      width: 47.5%;
-      display: block;
-      margin-bottom: 0; }
-      .footer p.maker {
-        float: left; } }
-  @media (min-width: 37.5em) {
-    .footer p {
-      font-size: 14px;
-      font-size: 0.875rem; } }
-
 .header {
   background: #464646;
   background: -moz-linear-gradient(top, #464646 0%, #2c2c2c 100%);
@@ -406,6 +382,44 @@ a {
   .author a {
     display: block; }
 
+.footer {
+  padding: 0.75em 0;
+  text-align: center;
+  background: #464646;
+  background: -moz-linear-gradient(top, #464646 0%, #2c2c2c 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #464646), color-stop(100%, #2c2c2c));
+  background: -webkit-linear-gradient(top, #464646 0%, #2c2c2c 100%);
+  background: -o-linear-gradient(top, #464646 0%, #2c2c2c 100%);
+  background: -ms-linear-gradient(top, #464646 0%, #2c2c2c 100%);
+  background: linear-gradient(top, #464646 0%, #2c2c2c 100%);
+  color: white;
+  font-size: 12px;
+  font-size: 0.75rem; }
+  .footer .maker a {
+    font-weight: bold; }
+  .footer p {
+    margin-bottom: 1em; }
+    .footer p:last-child {
+      margin-bottom: 0; }
+  @media (min-width: 30em) {
+    .footer p {
+      text-align: right;
+      float: right;
+      width: 47.5%;
+      display: block;
+      margin-bottom: 0; }
+      .footer p.maker {
+        float: left;
+        text-align: left; } }
+  @media (min-width: 37.5em) {
+    .footer p {
+      font-size: 14px;
+      font-size: 0.875rem; } }
+
+/*
+	Style Sections
+		Comment out whichever sections aren't used.
+*/
 .style-section.logo .title:before {
   font-family: "fontello";
   content: "\e70a"; }
