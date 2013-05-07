@@ -1,0 +1,40 @@
+.footer {
+	padding: .75em 0;
+	text-align: center;
+	@include linear-gradient-y(lighten($charcoal, 5%), darken($charcoal, 5%));
+	color: $white;
+	@include font-size(12);
+	
+	.maker a {
+		font-weight: bold;
+	}
+	
+	p {
+		margin-bottom: 1em;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	@include respond-min(mobile-landscape){
+		p {
+			text-align: right;
+			float: right;
+			width: 47.5%;
+			display: block;
+			margin-bottom: 0;
+			
+			&.maker {
+				float: left;
+				text-align: left;
+			}
+		}
+	}
+	
+	@include respond-min(small-tablet){
+		p {
+			@include font-size(14);
+		}
+	}
+}
