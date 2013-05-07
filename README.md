@@ -22,6 +22,8 @@ I've tried to make this as straight-forward as possible.
 
 The `index.html` file has the majority of what you need to edit. Search `!!` and you'll jump through the stages you need to change.
 
+To add icons (via. a webfont), rename the font file to `icon` and drop it into the `font` folder. Then go to the `_icon.scss` partial and paste in the class-based styles. Then quickly paste the names in the icons section of `index.html`. Admittedly, this section is a bit annoying and not as straight-forward as others, but what it produces looks pretty good and still only takes a couple of minutes.
+
 _styleSRC_ uses Sass...because it made sense to use a CSS pre-processor and I already use Sass.
 
 ### Features ###
