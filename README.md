@@ -18,11 +18,15 @@ If you've got a suggestion for a feature or can think of ways to improve it then
 
 ### Documentation ###
 
-I've tried to make this as straight-forward as possible. The `index.html` file has the majority of what you need to edit. Search `!!` and you'll jump through the stages you need to change. _styleSRC_ uses Sass...because I want to.
+I've tried to make this as straight-forward as possible.
+
+The `index.html` file has the majority of what you need to edit. Search `!!` and you'll jump through the stages you need to change.
+
+_styleSRC_ uses Sass...because it made sense to use a CSS pre-processor and I already use Sass.
 
 ### Features ###
 
-So far, there's just 'Logo', 'Colour Palette' and 'Typography', but I've got ideas for more:
+So far, there's just _Logo_, _Colour Palette_ and _Typography_, but I've got ideas for more:
 
 #### Upcoming Ideas ####
 - __Logo treatment:__ What the logo will look like on a light or dark background, or overlaid on a photorgraph.
