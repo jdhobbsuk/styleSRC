@@ -1,6 +1,5 @@
 .style-section.typography .title:before {
 	@include icon('fontello', '\e779');
-	font-weight: 100;
 }
 
 .type-item {
@@ -57,30 +56,6 @@
 		}
 	}
 	
-	.name,
-	.source {
-		@include font-size(16);
-		color: $grey;
-		font-weight: 400;
-		text-align: right;
-		
-		a {
-			font-weight: 700;
-		}
-	}
-	
-	.name {
-		text-transform: uppercase;
-		font-weight: 400;
-		letter-spacing: 1px;
-		@include font-size(16);
-	}
-	
-	.source {
-		@include font-size(14);
-		line-height: 1.7;
-	}
-	
 	footer {
 		@include box-sizing;
 		padding-bottom: 1.4em;
@@ -92,5 +67,9 @@
 		@include respond-min(netbook){
 			margin-top: 1.1em;
 		}
+	}
+	
+	&:last-child footer {
+		border-bottom: 0;
 	}
 }

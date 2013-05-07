@@ -34,7 +34,7 @@
 		Activate by adding "with-fixed" to <body>
 		Fixes header bar to top with position: relative
 -->
-<body class="">
+<body class="with-fixed">
 
 
 <!--
@@ -62,17 +62,18 @@
 		
 		<!--
 			** Author:
-				A spot to slap your name / company logo,
-				uncomment below to see the Mixd example
+				A spot to slap your name / company logo
+				
+				All styling for this block is held in _header.scss
 		-->
-		<div class="author">
+		<!--<div class="author">
 			<h3>
 				<span>Lovingly created by</span>
 				<a href="http://mixd.co.uk">
 					<img src="assets/img/author-logo.png" alt="Mixd" />
 				</a>
 			</h3>
-		</div>
+		</div>-->
 	</div>
 </header>
 
@@ -104,6 +105,16 @@
 			<li>
 				<span class="color-tile" style="background: #589596;">
 					<span class="hex-ref">#589596</span>
+				</span>
+			</li>
+			<li>
+				<span class="color-tile" style="background: #96c6a6;">
+					<span class="hex-ref">#96c6a6</span>
+				</span>
+			</li>
+			<li>
+				<span class="color-tile" style="background: #b0dba4;">
+					<span class="hex-ref">#b0dba4</span>
 				</span>
 			</li>
 			
@@ -171,7 +182,6 @@
 					<h2 class="source">Sourced from <a href="#">Typekit</a></h2>
 				</footer>
 			</article>
-		</section>
 				
 		<article class="font-2 type-item">
 			<h3 class="heading">Proxima Nova, Bold</h3>
@@ -210,8 +220,37 @@
 				</footer>
 			</article>
 		</section>
+		
+		<section class="style-section icons">
+		<h1 class="title">Icons</h1>
+			<ul class="icon-list">
+				<li class="icon-user"></li>
+				<li class="icon-house"></li>
+				<li class="icon-link"></li>
+				<li class="icon-tag"></li>
+				<li class="icon-location"></li>
+				<li class="icon-eye"></li>
+				<li class="icon-graduation"></li>
+				<li class="icon-ticket"></li>
+				<li class="icon-pictures"></li>
+				<li class="icon-phone"></li>
+			</ul>
+			
+			<footer>
+				<h1 class="name">Entypo</h1>
+				<h2 class="source">Sourced from <a href="#">IcoMoon</a></h2>
+			</footer>
+		
+		</section>
 	
 </div>
+
+<footer class="footer">
+	<div class="wrap cf">
+		<p class="maker">brought to you by <a href="#">thecodezombie</a></p>
+		<p>Published under the <a href="http://www.dbad-license.org/">DBAD License</a></p>
+	</div>
+</footer>
 	
 	
 
