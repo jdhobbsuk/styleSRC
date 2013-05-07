@@ -26,11 +26,10 @@ _styleSRC_ uses Sass...because it made sense to use a CSS pre-processor and I al
 
 ### Features ###
 
-So far, there's just _Logo_, _Colour Palette_ and _Typography_, but I've got ideas for more:
+So far, there's just _Logo_, _Colour Palette_, _Typography_ and _Icons_ but I've got ideas for more:
 
 #### Upcoming Ideas ####
-- __Logo treatment:__ What the logo will look like on a light or dark background, or overlaid on a photorgraph.
-- __Icons:__ Grab the icon-font, and drop in the relevent classes. Automatically styles into an example list.
+- __Logo treatment:__ What the logo will look like on a light or dark background, or overlaid on a photograph.
 - __Example copy:__ Examples of your font in the usual dummy text (e.g. _Lorem Ipsum_ and _The quick brown fox_)
 - __Photography / Illustrations:__ Examples that you think would be suitable for the website.
 - __Social names:__ For when your project is brand new and you want to clearly propose the Facebook page or Twitter handle
