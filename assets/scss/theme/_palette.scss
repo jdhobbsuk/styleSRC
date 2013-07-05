@@ -32,7 +32,7 @@ $inc: 3;
 		width: 100%;
 		height: 100%;
 		
-		@include respond-min(small-tablet){
+		@include respond-min(tablet-portrait){
 			cursor: pointer;
 			
 			&:hover .hex-ref {
@@ -68,6 +68,34 @@ $inc: 3;
 			&:first-child {
 				top: $baseunit / 2;
 				left: $baseunit / 2;
+			}
+			
+		}
+	}
+	
+	.triple-overlap {
+		position: relative;
+		margin-top: 0;
+		
+		li {
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: 0;
+			z-index: 1;
+			
+			&:first-child {
+				z-index: 2;
+				top: -$baseunit / 2;
+				left: -$baseunit / 2;
+			}
+			
+			&:last-child {
+				top: auto;
+				left: auto;
+				bottom: -$baseunit / 2;
+				right: -$baseunit / 2;
+				z-index: 0;
 			}
 			
 		}
@@ -110,8 +138,8 @@ $inc: 3;
 				margin-top: -($baseunit / 3);
 				
 				li:first-child {
-					top: $baseunit / 1.5;
-					left: $baseunit / 1.5;
+					top: $baseunit / 1.33;
+					left: $baseunit / 1.33;
 				}
 			}
 		}

@@ -449,7 +449,7 @@ a {
     background-color: #333;
     width: 100%;
     height: 100%; }
-    @media (min-width: 37.5em) {
+    @media (min-width: 48em) {
       .color-palette .color-tile {
         cursor: pointer; }
         .color-palette .color-tile:hover .hex-ref {
@@ -480,6 +480,25 @@ a {
       .color-palette .double-overlap li:first-child {
         top: 12px;
         left: 12px; }
+  .color-palette .triple-overlap {
+    position: relative;
+    margin-top: 0; }
+    .color-palette .triple-overlap li {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      z-index: 1; }
+      .color-palette .triple-overlap li:first-child {
+        z-index: 2;
+        top: -12px;
+        left: -12px; }
+      .color-palette .triple-overlap li:last-child {
+        top: auto;
+        left: auto;
+        bottom: -12px;
+        right: -12px;
+        z-index: 0; }
   @media (min-width: 30em) {
     .color-palette {
       max-width: 336px; }
@@ -503,8 +522,8 @@ a {
           margin-right: 36px;
           margin-top: -8px; }
           .color-palette li.double-overlap li:first-child {
-            top: 16px;
-            left: 16px; } }
+            top: 18.04511px;
+            left: 18.04511px; } }
   @media (min-width: 62em) {
     .color-palette {
       max-width: none; }
