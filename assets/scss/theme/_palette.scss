@@ -50,7 +50,7 @@ $inc: 3;
 		@include box-sizing;
 		padding: .25em .5em;
 		text-align: right;
-		@include font-size(13);
+		@include font-size(12);
 		background-color: rgba($charcoal, .6);
 		color: $white;
 	}
@@ -63,12 +63,13 @@ $inc: 3;
 			position: absolute;
 			top: 0;
 			left: 0;
-			margin-left: 0;
+			margin: 0;
 			
 			&:first-child {
-				top: $baseunit;
-				left: $baseunit;
+				top: $baseunit / 2;
+				left: $baseunit / 2;
 			}
+			
 		}
 	}
 	
@@ -95,22 +96,6 @@ $inc: 3;
 	}
 	
 	@include respond-min(tablet-portrait){
-		$inc: 4;
-	
-		max-width: none;
-		
-		li {
-			width: $baseunit * $inc;
-			height: $baseunit * $inc;
-			margin-right: $baseunit / 2;
-			
-			&:nth-child(#{$tiles-per-row}n + #{$tiles-per-row}) {
-				margin-right: $baseunit /2;
-			}
-		}
-	}
-	
-	@include respond-min(tablet-landscape){
 		$inc: 5;
 	
 		max-width: none;
@@ -120,9 +105,27 @@ $inc: 3;
 			height: $baseunit * $inc;
 			margin-right: $baseunit;
 			
-			&:nth-child(#{$tiles-per-row}n + #{$tiles-per-row}) {
-				margin-right: $baseunit;
+			&.double-overlap {
+				margin-right: $baseunit * 1.5;
+				margin-top: -($baseunit / 3);
+				
+				li:first-child {
+					top: $baseunit / 1.5;
+					left: $baseunit / 1.5;
+				}
 			}
+		}
+	}
+	
+	@include respond-min(tablet-landscape){
+		$inc: 6;
+	
+		max-width: none;
+		
+		li {
+			width: $baseunit * $inc;
+			height: $baseunit * $inc;
+			margin-right: $baseunit;
 		}
 	}
 }
