@@ -27,13 +27,17 @@ $inc: 3;
 		display: block;
 		position: relative;
 		background-color: #333;
-		cursor: pointer;
+		
 		
 		width: 100%;
 		height: 100%;
 		
-		&:hover .hex-ref {
-			display: block;
+		@include respond-min(small-tablet){
+			cursor: pointer;
+			
+			&:hover .hex-ref {
+				display: block;
+			}
 		}
 	}
 	
@@ -87,10 +91,6 @@ $inc: 3;
 		li {
 			width: $baseunit * $inc;
 			height: $baseunit * $inc;
-		}
-		
-		.hex-ref {
-			@include font-size(14);
 		}
 	}
 	
